@@ -1,17 +1,15 @@
-import Logo from './IMG/logo.png';
 import './App.css';
-
+import { BrowserRouter as Router, swith, Route, link} from 'react-router-dom';
+import Navbar from './Componentes/Navbar';
+import Hero from "./Componentes/Hero/Hero";
 function App() {
   return (
-   
-      <header className="navbar">
-        <ul>
-          <li>FORMAÇÃO</li>
-          <li>SKILLS</li>
-          <li>OBJETIVOS</li>
-          <li>PROJETOS</li>
-        </ul>
+    <Router>
+      <header>
+        <Navbar/>
       </header>
+      <Hero/>
+    </Router>
   );
 }
 
