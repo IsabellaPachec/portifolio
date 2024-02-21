@@ -1,6 +1,8 @@
 .navbar {
   background: transparent;
-  padding: 20px 0;
+  padding: 30px 0;
+  position: fixed;
+  z-index: 1000;
 }
 
 .navbar-list {
@@ -8,7 +10,7 @@
   text-align: center;
   list-style-type: none;
   margin: 0;
-  padding: 0;
+  padding-left: 40px;
 }
 
 .navbar-list li {
