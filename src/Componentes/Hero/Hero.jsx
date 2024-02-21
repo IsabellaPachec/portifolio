@@ -1,7 +1,12 @@
 import Circulos from "../../IMG/circulos.png";
+import "./Hero.css";
+// ICONS //
+import { FaGithub } from "react-icons/fa";
+import { FaLinkedin } from "react-icons/fa";
+import { FaRegNewspaper } from "react-icons/fa6";
 
-function HeroSection(){
-    return(
+function HeroSection() {
+    return (
         <div className="hero-section">
             <div className="left">
                 <h1 className="title">HELLO WORLD!</h1>
@@ -9,7 +14,11 @@ function HeroSection(){
             </div>
 
             <div className="icons">
-                
+                <ul>
+                    <li><FaGithub /></li>
+                    <li><FaLinkedin /></li>
+                    <li><FaRegNewspaper /></li>
+                </ul>
             </div>
 
             <div className="right">
