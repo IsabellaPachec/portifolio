@@ -17,8 +17,34 @@
 
 .title {
     font-size: 80px;
-    padding-bottom: 30px;
+    margin-bottom: 30px;
+    border-right: 2px solid #14323D;
+    white-space: nowrap;
+    overflow: hidden;
 
+}
+
+.typing-animation{
+    animation: blinkCursor 200ms  steps(40) infinite normal, typing 4.5s steps(40) 6s infinite ;
+}
+
+@keyframes blinkCursor{
+    from{
+        border-right-color: #14323D; 
+    }
+    to{
+        border-right-color: transparent;; 
+    }
+}
+
+
+@keyframes typing{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
 }
 
 .cir {

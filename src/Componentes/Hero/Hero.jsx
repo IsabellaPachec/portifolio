@@ -12,7 +12,7 @@ function HeroSection() {
     return (
         <div className="hero-section">
             <div className="left">
-                <h1 className="title">HELLO WORLD!</h1>
+                <h1 className="title  typing-animation">HELLO WORLD!</h1>
                 <p className="texto">Olá, eu sou a Isabella Pacheco, uma entusiasta Desenvolvedora Front-End e futura Cientista de Dados. Bem-vindo ao meu portfólio, onde compartilho projetos envolventes desenvolvidos em HTML, CSS e JavaScript, e em breve em mais linguagens. Fique à vontade para explorar e descobrir mais sobre meu trabalho!</p>
                 <div className="icons">
                     <ul>
