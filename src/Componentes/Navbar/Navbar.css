@@ -32,3 +32,36 @@
   color: #2e728b;
   
 }
+
+.burg{
+  border: none;
+  background: none;
+  border-top: 3px solid #14323D;
+}
+
+.burg::before,
+.burg::after {
+  content: " ";
+  display: block;
+  width: 30px;
+  height: 3px;
+  background-color: #EEF3FA;
+}
+
+
+
+@media screen and (min-width: 1300px){
+
+}
+
+@media screen and (max-width: 960px){
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (min-width: 200px){
+  
+}

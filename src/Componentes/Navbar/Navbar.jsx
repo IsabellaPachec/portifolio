@@ -1,5 +1,8 @@
 import "./Navbar.css";
 import { Link } from 'react-router-dom';
+//ICONS
+import { RxHamburgerMenu } from "react-icons/rx";
+
 
 function Navbarcomponent(){
     return(
@@ -10,6 +13,7 @@ function Navbarcomponent(){
                 <li className="navbar-link">SKILLS</li>
                 <li className="navbar-link">OBJETIVO</li>
                 <li className="navbar-link">PROJETOS</li>
+                <li><button className="burg"></button></li>
             </ul>
         </nav>
     );

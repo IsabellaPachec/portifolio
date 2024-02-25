@@ -73,3 +73,22 @@
 .texto{
     font-size: 19px;
 }
+
+@media screen and (min-width: 1300px){
+    .hero-section{
+        gap: 20;
+
+    }
+}
+
+@media screen and (max-width: 960px){
+
+}
+
+@media screen and (max-width: 480px) {
+
+}
+
+@media screen and (min-width: 200px){
+  
+}

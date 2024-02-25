@@ -2,6 +2,7 @@ import Circulos from "../../IMG/circulos.png";
 import "./Hero.css";
 import React, { useState, useEffect } from 'react';
 // ICONS //
+
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaRegNewspaper } from "react-icons/fa6";

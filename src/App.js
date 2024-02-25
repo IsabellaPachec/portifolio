@@ -1,6 +1,6 @@
 import './App.css';
 import { BrowserRouter as Router, swith, Route, link} from 'react-router-dom';
-import Navbar from './Componentes/Navbar';
+import Navbar from './Componentes/Navbar/Navbar';
 import Hero from "./Componentes/Hero/Hero";
 function App() {
   return (
