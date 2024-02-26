@@ -1,22 +1,31 @@
-import "./Navbar.css";
+import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-//ICONS
-import { RxHamburgerMenu } from "react-icons/rx";
+import { RiMenuLine, RiCloseLine } from "react-icons/ri"; // Importe os ícones do menu
 
+import "./Navbar.css";
 
-function Navbarcomponent(){
-    return(
+function Navbarcomponent() {
+    const [menuOpen, setMenuOpen] = useState(false); // Estado para controlar se o menu está aberto ou fechado
+
+    const toggleMenu = () => {
+        setMenuOpen(!menuOpen); // Função para alternar o estado do menu
+    };
+
+    return (
         <nav className="navbar">
-            <ul className="navbar-list">
-                <li className="navbar-link">INICIO</li>
-                <li className="navbar-link">FORMAÇÃO</li>
-                <li className="navbar-link">SKILLS</li>
-                <li className="navbar-link">OBJETIVO</li>
-                <li className="navbar-link">PROJETOS</li>
-                <li><button className="burg"></button></li>
+            <div className="navbar-toggle" onClick={toggleMenu}>
+                {menuOpen ? <RiCloseLine /> : <RiMenuLine />} {/* Ícone do menu hamburguer ou ícone de fechar */}
+            </div>
+            <ul className={`navbar-list ${menuOpen ? "active" : ""}`}>
+                <li className="navbar-link"><Link to="/">INICIO</Link></li>
+                <li className="navbar-link"><Link to="/formacao">FORMAÇÃO</Link></li>
+                <li className="navbar-link"><Link to="/skills">SKILLS</Link></li>
+                <li className="navbar-link"><Link to="/objetivo">OBJETIVO</Link></li>
+                <li className="navbar-link"><Link to="/projetos">PROJETOS</Link></li>
             </ul>
         </nav>
     );
 }
 
 export default Navbarcomponent;
+
