@@ -6,7 +6,7 @@ import React, { useState, useEffect } from 'react';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa";
 import { FaRegNewspaper } from "react-icons/fa6";
-
+import { Link } from 'react-router-dom';
 
 
 function HeroSection() {
@@ -18,7 +18,7 @@ function HeroSection() {
                 <div className="icons">
                     <ul>
                         <li><FaGithub /></li>
-                        <li><FaLinkedin /></li>
+                        <li><Link to="https://www.linkedin.com/in/isabella-pacheco-2a5a42259/"><FaLinkedin /></Link></li>
                         <li><FaRegNewspaper /></li>
                     </ul>
                 </div>
